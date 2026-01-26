@@ -9,7 +9,7 @@
 
 A simple, type-safe Discord Bot template built with Bun + Biome + TypeScript.
 
-[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/7_bi9B?referralCode=DIAbPh&utm_medium=integration&utm_source=template&utm_campaign=generic)
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/discord-bot-template?referralCode=DIAbPh&utm_medium=integration&utm_source=template&utm_campaign=generic)
 
 ## Features
 
