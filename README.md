@@ -18,6 +18,17 @@ A simple, type-safe Discord Bot template built with Bun + Biome + TypeScript.
 - Dynamic command/event loading
 - Docker/Railway deployment ready
 
+## Tech Stack
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/images/stack-dark.png">
+  <img src="docs/images/stack.png" alt="Tech stack diagram">
+</picture>
+
+Runtime is Bun; code quality is enforced by Biome (via lefthook pre-commit and CI),
+dependencies are kept current by Renovate, and the image is built from the Dockerfile
+and deployed to Railway.
+
 ## Quick Start
 
 ### Installation
