@@ -1,5 +1,5 @@
 # Build stage
-FROM oven/bun:1.3.5 AS builder
+FROM oven/bun:1.4.0 AS builder
 
 WORKDIR /app
 
@@ -9,7 +9,7 @@ RUN bun install --frozen-lockfile
 COPY . .
 
 # Production stage
-FROM oven/bun:1.3.5-slim AS runner
+FROM oven/bun:1.4.0-slim AS runner
 
 WORKDIR /app
 
