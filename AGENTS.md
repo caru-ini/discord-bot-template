@@ -153,6 +153,13 @@ log.error({ err: error }, 'error message');
 - `uncaughtException`: Uncaught exceptions (exits process)
 - `SIGINT/SIGTERM`: Graceful shutdown
 
+### `dev-shortcuts.ts`
+**Dev-only keyboard shortcuts**. No-op outside a TTY (Docker/Railway).
+- `d`: sync commands to the guild, `r`: restart (watch mode only), `i`: print invite link, Ctrl+L: clear logs, `q` / Ctrl+C: quit
+
+### `term.ts`
+**Virtual terminal for dev**. Buffers log lines, pins the shortcut bar to the last row (scroll region), and repaints from the buffer on resize. Logs reach it via `logger.ts` (TTY only).
+
 ---
 
 ## Path Aliases
@@ -192,6 +199,7 @@ import { env } from '../env';
 | Command | Description |
 |---------|-------------|
 | `bun run start` | Start bot |
+| `bun run dev` | Start bot in watch mode (`d` = sync, `r` = restart, `i` = invite, `q` = quit) |
 | `bun run deploy-commands` | Deploy commands to guild |
 | `bun run deploy-commands --global` | Global deploy |
 | `bun run check` | Biome lint + format |
