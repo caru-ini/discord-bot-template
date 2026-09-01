@@ -8,6 +8,7 @@
   "scripts": {
     "preinstall": "npx only-allow bun",
     "start": "bun run ./src/index.ts",
+    "dev": "bun --watch run ./src/index.ts",
     "deploy-commands": "bun run ./src/deploy.ts",
     "fmt": "biome format --write .",
     "lint": "biome lint --write .",

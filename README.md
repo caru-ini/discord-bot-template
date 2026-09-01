@@ -62,6 +62,10 @@ bun run deploy-commands --global  # Global deploy (production, take more time to
 
 ```bash
 bun run start
+
+# Development: auto-restart on file change, with keyboard shortcuts
+# d = sync commands to the guild, r = restart, i = print invite link, q = quit
+bun run dev
 ```
 
 ## Project Structure
@@ -149,6 +153,7 @@ docker run -d --env-file .env discord-bot
 | Command | Description |
 | ------- | ----------- |
 | `bun run start` | Start the bot |
+| `bun run dev` | Start the bot in watch mode (`d` = sync, `r` = restart, `i` = invite, `q` = quit) |
 | `bun run deploy-commands` | Deploy slash commands |
 | `bun run lint` | Run Biome linter |
 | `bun run fmt` | Format code with Biome |

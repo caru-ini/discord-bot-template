@@ -2,6 +2,7 @@ import { Collection } from 'discord.js';
 import { client } from '@/client';
 import { env } from '@/env';
 import { getCommands, getEvents } from '@/utils/core';
+import { setupDevShortcuts } from '@/utils/dev-shortcuts';
 import { setupErrorHandlers } from '@/utils/error-handler';
 import { logger } from '@/utils/logger';
 
@@ -29,3 +30,5 @@ for (const event of events) {
 log.info(`Loaded ${events.length} event(s).`);
 
 client.login(env.DISCORD_BOT_TOKEN);
+
+setupDevShortcuts();
